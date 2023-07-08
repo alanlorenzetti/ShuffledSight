@@ -2,10 +2,33 @@
 <html>
 <head>
     <title>ShuffledSight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+        /* Responsive styles */
+        @media (max-width: 576px) {
+            /* Adjust font size and margins for smaller screens */
+            h1 {
+                font-size: 24px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .lead {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            .file-upload button,
+            .description {
+                margin-top: 20px;
+            }
+            .small.text-justify {
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -25,9 +48,9 @@
             <p class="small text-justify"><b>ShuffledSight</b> is an intuitive, web-based deidentification tool designed to anonymize your file names,  ensuring an unbiased viewing experience. Simply select your files and let ShuffledSight rename them with random identifiers.</p>
             <p class="small text-justify">Primarily designed for images but compatible with any file type, ShuffledSight randomly shuffles the order of your files, assigns new ordinal names while retaining the original extensions, and provides a downloadable dictionary mapping the original names to the newly assigned ones. All of these actions take place within your browser, ensuring data privacy.</p>  
             <p class="small text-justify">Whether you're a researcher looking to eliminate bias from your data analysis, a professional needing to anonymize sensitive files, or just looking for a simple tool to randomly rename files, ShuffledSight offers a straightforward solution. With ShuffledSight, you gain a fresh, unbiased perspective on your files.</p>
-            <p class="small text-justify">The code for the creation of this webpage is open source and is available in <a href="https://github.com/alanlorenzetti/ShuffledSight">this GitHub repo.</href></p>
+            <p class="small text-justify">The code for the creation of this webpage is open source and is available in <a href="https://github.com/alanlorenzetti/ShuffledSight">this GitHub repo.</a></p>
             <p class="small text-justify">If you find this tool useful, please consider buying me a coffee by clicking on the button below.</p>
-        <div>
+        </div>
 
         <div class="coffee text-center">
             <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="alorenzetti" data-color="#FFDD00" data-emoji="" data-font="Inter" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
