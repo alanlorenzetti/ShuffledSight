@@ -108,3 +108,14 @@ function startDeidentification() {
         deidentifyButton.disabled = false;
     });
 }
+
+// Help
+function toggleHelp() {
+    let helpSection = document.getElementById('helpSection');
+
+    if (helpSection.style.display === 'none') {
+        helpSection.style.display = 'block';
+    } else {
+        helpSection.style.display = 'none';
+    }
+}
