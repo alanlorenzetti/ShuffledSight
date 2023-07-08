@@ -1,0 +1,21 @@
+body {
+    background-color: #F5F5F5;
+    padding: 10px;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.file-upload {
+    margin-top: 20px;
+}
+
+.description p {
+    margin-bottom: 1em;
+}
+
+h1 i {
+    margin-left: 10px;
+    margin-right: 10px;
+}

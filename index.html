@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShuffledSight</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center"><i class="fa fa-random"></i> ShuffledSight <i class="fa fa-eye"></i></h1>
+        <p class="lead text-center">Select your files and they will be randomly renamed with ShuffledSight to ensure an unbiased view. The whole process happens <b>in your computer</b> so do not worry!</p>
+        
+        <div class="file-upload">
+            <input type="file" id="files" name="files[]" multiple class="form-control" onchange="showFileNames()">
+            <button id="deidentifyButton" onclick="deidentifyFiles()" class="btn btn-primary btn-block mt-3" disabled><i class="fa fa-random"></i> Deidentify</button>
+            <a id="downloadLink" style="display: none;" class="btn btn-success btn-block mt-3"><i class="fa fa-download"></i> Download Deidentified Files and Dictionary</a>
+            <button id="showFilesButton" onclick="toggleFileList()" class="btn btn-info btn-block mt-3" style="display: none;"><i class="fa fa-eye"></i> See Selected Files</button>
+            <div id="fileList" class="alert alert-info mt-3" style="display: none;"></div>
+        </div>
+
+        <div class="description">
+            <br>
+            <p class="small text-justify"><b>ShuffledSight</b> is an intuitive, web-based deidentification tool designed to anonymize your file names,  ensuring an unbiased viewing experience. Simply select your files and let ShuffledSight rename them with random identifiers.</p>
+            <p class="small text-justify">Primarily designed for images but compatible with any file type, ShuffledSight randomly shuffles the order of your files, assigns new ordinal names while retaining the original extensions, and provides a downloadable dictionary mapping the original names to the newly assigned ones. All of these actions take place within your browser, ensuring data privacy.</p>  
+            <p class="small text-justify">Whether you're a researcher looking to eliminate bias from your data analysis, a professional needing to anonymize sensitive files, or just looking for a simple tool to randomly rename files, ShuffledSight offers a straightforward solution. With ShuffledSight, you gain a fresh, unbiased perspective on your files.</p>
+        <div>
+    </div>
+    <script src="js/deidentifier.js"></script>
+</body>
+</html>
